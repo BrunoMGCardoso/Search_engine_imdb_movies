@@ -1,6 +1,6 @@
-import streamlit as st
-import pandas as pd
 import busca
+import pandas as pd
+import streamlit as st
 
 df_filmes = pd.read_csv('base_dados/filmes_imdb.csv')
 
