@@ -111,12 +111,8 @@ with col_1:
             # Limpa-se a lista que está na memória
             filmes.clear()
 
-            st.subheader('Resultado da Pesquisa:')
-
             # --- Quando se tem a opção Ano.
             if opcao_pesquisa == 'Ano':
-
-                st.write(f'**:blue[Filmes de {ano}]**')
 
                 # Indices dos filmes resultantes da pesquisa.
                 indices_filmes = df_filmes[
@@ -129,8 +125,6 @@ with col_1:
 
             # --- Quando se tem a opção Avaliação
             elif opcao_pesquisa == 'Avaliação':
-
-                st.write(f'Avaliação entre {avaliacao[0]} e {avaliacao[1]}')
 
                 # Seleção dos filmes entre a avaliação mínima & avaliação máxima, com a exibição das colunas nome do filme e avaliação.
 
@@ -159,8 +153,7 @@ with col_1:
                     )
 
                     for nome, corr, index in resultado:
-                        st.write(f'✅ {nome} (Semelhança: {corr :.1f} %)')
-
+                        
                         # Armazenamento na memória dos resultados como dicionário onde a 'nome do filme : [correlação, index no dataframe]'
                         filmes[nome] = [corr, index]
 
