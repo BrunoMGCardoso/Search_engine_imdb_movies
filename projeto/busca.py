@@ -2,8 +2,7 @@ from rapidfuzz import process
 import pandas as pd
 import streamlit as st
 
-dframe = pd.read_csv('base_dados/filmes_imdb.csv')
-
+dframe = pd.read_csv('C:\\Users\\bruno\\Documents\\GitHub\\Search_engine_imdb_movies\\projeto\\base_dados\\filmes_imdb.csv')
 
 def busca(
     palavra_chave: str, data_frame: object, col_name: str, semelhanca: int = 0
@@ -36,7 +35,6 @@ def busca(
 
     return resultado
 
-
 def listagem(indices, data_frame):
     '''Docstrings
     Listagem de filmes pesquisados
@@ -59,7 +57,6 @@ def listagem(indices, data_frame):
         ] = indice
 
     return st.session_state.resultado_pesquisa
-
 
 def mostrar_filmes(lista):
     '''Docstrings
