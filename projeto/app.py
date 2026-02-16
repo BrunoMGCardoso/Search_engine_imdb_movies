@@ -3,7 +3,7 @@ import streamlit as st
 
 import busca
 
-df_filmes = pd.read_csv('base_dados/filmes_imdb.csv')
+df_filmes = pd.read_csv('C:\\Users\\bruno\\Documents\\GitHub\\Search_engine_imdb_movies\\projeto\\base_dados\\filmes_imdb.csv')
 
 # --- Barra superior da página --- #
 
@@ -46,7 +46,7 @@ st.title(
     ':streamlit: :blue[Top 1000 filmes do IMDB]', text_alignment='center'
 )
 
-# Breve descrição da página e a sua finalidade
+# Descrição da página e a sua finalidade
 
 st.write(
     'Este é um motor de busca onde podes procurar através de uma palavra-chave pelo filme que pretendes saber mais informações.'
@@ -54,13 +54,13 @@ st.write(
 
 # Divisão em duas colunas o corpo da página
 
-col1, col2 = st.columns(2)
+col_1, col_2 = st.columns(2)
 
 # --- Coluna de pesquisa --- #
 
 # Na coluna 1 irão estar contidos um campo para inserir os termos da pesquisa e os resultados da pesquisa que dai resultarem.
 
-with col1:
+with col_1:
     # Inclusão da 'lista' para guardar os dados que nela entrem.
 
     # Iniciação de um dicionário para guardar.
@@ -187,7 +187,7 @@ with col1:
 
 # --- Coluna de detalhes do filme --- #
 
-with col2:
+with col_2:
 
     filme = st.selectbox(
         label='**Lista de Filmes**',
