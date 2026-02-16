@@ -125,9 +125,7 @@ with col_1:
 
                 # Dicionário com nome do filme (Key) e indice no dataframe (Value)
 
-                lista_filmes = busca.listagem(indices_filmes, df_filmes)
-
-                busca.mostrar_filmes(lista_filmes)
+                filmes = busca.listagem(indices_filmes, df_filmes)
 
             # --- Quando se tem a opção Avaliação
             elif opcao_pesquisa == 'Avaliação':
@@ -141,9 +139,7 @@ with col_1:
                     & (df_filmes['Movie Rating'] <= avaliacao[1])
                 ].index
 
-                lista_filmes = busca.listagem(indices_filmes, df_filmes)
-
-                busca.mostrar_filmes(lista_filmes)
+                filmes = busca.listagem(indices_filmes, df_filmes)
 
             # --- Quando se tem a opção Nome.
             elif opcao_pesquisa == 'Nome':
@@ -166,7 +162,7 @@ with col_1:
                         st.write(f'✅ {nome} (Semelhança: {corr :.1f} %)')
 
                         # Armazenamento na memória dos resultados como dicionário onde a 'nome do filme : [correlação, index no dataframe]'
-                        filmes[nome] = index
+                        filmes[nome] = [corr, index]
 
                 else:
                     # Mensagem de erro para quando os termos não são cumpridos.
