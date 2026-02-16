@@ -160,7 +160,8 @@ with col_1:
                 else:
                     # Mensagem de erro para quando os termos não são cumpridos.
                     st.error('Digite no mínimo 3 caracteres para a pesquisa')
-
+            else:
+                st.warning('Selecione uma opção')
     except NameError:
         st.write('''Opção inválida.
                 \nEscolha uma opção''')
