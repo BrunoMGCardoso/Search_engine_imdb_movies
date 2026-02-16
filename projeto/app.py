@@ -33,13 +33,6 @@ with st.sidebar:
 
 # --- Página principal --- #
 
-botao_limpar = st.button(
-    'Limpar'
-)  # Botão para limpar o conteúdo de toda a página
-
-if botao_limpar:
-    st.empty()
-
 # Título da página (Centrado, de cor azul com emoji do streamlit no início)
 
 st.title(
