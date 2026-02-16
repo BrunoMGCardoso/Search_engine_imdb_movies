@@ -1,0 +1,12 @@
+site_name: Search engine (IMDB movies)
+repo_url: https://github.com/BrunoMGCardoso/Search_engine_imdb_movies
+repo_name: BrunoMGCardoso/Search_engine_imdb_movies
+
+theme: 
+  name: material
+  language: pt
+  logo: assets/icon_bilhete.ico
+  favicon: assets/icon_bilhete.ico
+
+markdown_extensions:
+  - attr_list
