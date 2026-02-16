@@ -164,9 +164,18 @@ with col_1:
     except NameError:
         st.write('''Opção inválida.
                 \nEscolha uma opção''')
-
-    filmes = st.session_state.resultado_pesquisa
-
+    
+    if filmes:
+        st.subheader('Resultado da Pesquisa:')
+        
+        with st.container(height=300):
+            if opcao_pesquisa in ['Ano', 'Avaliação']:
+                for filme in filmes:
+                    st.write(filme)
+            elif opcao_pesquisa == 'Nome':
+                for filme in filmes:
+                    st.write(f'✅ {filme} (Semelhança: {filmes[filme][0] :.1f} %)') 
+                
 # --- Coluna de detalhes do filme --- #
 
 with col_2:
