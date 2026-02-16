@@ -54,7 +54,7 @@ def listagem(indices, data_frame):
     for indice in indices:
         st.session_state.resultado_pesquisa[
             data_frame.iloc[indice]['Movie Name']
-        ] = indice
+        ] = [indice]
 
     return st.session_state.resultado_pesquisa
 
