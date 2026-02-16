@@ -191,11 +191,11 @@ with col_2:
 
         st.header(filme)
 
-        ano_filme = str(df_filmes.loc[filmes[filme], 'Year of Release'])
+        ano_filme = str(df_filmes.loc[filmes[filme][-1], 'Year of Release'])
 
-        duracao_filme = str(df_filmes.loc[filmes[filme], 'Watch Time'])
+        duracao_filme = str(df_filmes.loc[filmes[filme][-1], 'Watch Time'])
 
-        descricao_filme = str(df_filmes.loc[filmes[filme], 'Description'])
+        descricao_filme = str(df_filmes.loc[filmes[filme][-1], 'Description'])
 
         st.subheader(ano_filme)
 
