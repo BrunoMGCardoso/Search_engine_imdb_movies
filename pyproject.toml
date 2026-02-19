@@ -27,3 +27,7 @@ docs = [
     "mkdocstrings-python (>=2.0.2,<3.0.0)",
     "mkdocs-material (>=9.7.1,<10.0.0)"
 ]
+
+[tool.black]
+line-length = 78
+skip-string-normalization = true
