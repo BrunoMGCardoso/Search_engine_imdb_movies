@@ -3,7 +3,11 @@ import streamlit as st
 
 import busca
 
-df_filmes = pd.read_csv('C:\\Users\\bruno\\Documents\\GitHub\\Search_engine_imdb_movies\\projeto\\base_dados\\filmes_imdb.csv')
+# Base de dados que serve de referência para a pesquisa dos filmes.
+
+df_filmes = pd.read_csv(
+    'C:\\Users\\bruno\\Documents\\GitHub\\Search_engine_imdb_movies\\projeto\\base_dados\\filmes_imdb.csv'
+)
 
 # --- Barra superior da página --- #
 
@@ -153,7 +157,7 @@ with col_1:
                     )
 
                     for nome, corr, index in resultado:
-                        
+
                         # Armazenamento na memória dos resultados como dicionário onde a 'nome do filme : [correlação, index no dataframe]'
                         filmes[nome] = [corr, index]
 
@@ -165,18 +169,20 @@ with col_1:
     except NameError:
         st.write('''Opção inválida.
                 \nEscolha uma opção''')
-    
+
     if filmes:
         st.subheader('Resultado da Pesquisa:')
-        
+
         with st.container(height=300):
             if opcao_pesquisa in ['Ano', 'Avaliação']:
                 for filme in filmes:
                     st.write(filme)
             elif opcao_pesquisa == 'Nome':
                 for filme in filmes:
-                    st.write(f'✅ {filme} (Semelhança: {filmes[filme][0] :.1f} %)') 
-                
+                    st.write(
+                        f'✅ {filme} (Semelhança: {filmes[filme][0] :.1f} %)'
+                    )
+
 # --- Coluna de detalhes do filme --- #
 
 with col_2:
