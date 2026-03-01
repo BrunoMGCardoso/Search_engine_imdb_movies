@@ -88,9 +88,9 @@ with col_1:
 
         avaliacao = st.slider(
             label='Avaliação',
-            min_value=0.0,
-            max_value=10.0,
-            value=(0.0, 10.0),
+            min_value= df_filmes['Movie Rating'].min(),
+            max_value=df_filmes['Movie Rating'].max(),
+            value=(df_filmes['Movie Rating'].min(), df_filmes['Movie Rating'].max())
         )
 
     # Para a opção 'Nome', aparece uma caixa de texto para digitar os termos a pesquisar.
