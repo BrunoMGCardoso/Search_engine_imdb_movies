@@ -9,25 +9,25 @@ Fácil de utilizar e de visualização agradável.
 ## Indíce
 ---
 
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação](#instalação)
+- [Pré-requisitos](#hammer_and_wrench-pré-requisitos)
+- [Instalação](#gear-instalação)
     - [Python](#python)
     - [Poetry](#poetry)
-- [Execução](#execução)
     - [Instalação do programa](#instalação-do-programa)
+- [Execução](#arrow_forward-execução)
     - [Execução do Programa](#execução-do-programa)
-- [Estrutura do motor de busca](#estrutura-do-motor-de-busca)
+- [Estrutura do motor de busca](#building_construction-estrutura-do-motor-de-busca)
     - [Página Inicial](#página-inicial)
     - [Pesquisa](#pesquisa)
         - [Ano](#ano)
         - [Avaliação](#avaliação)
         - [Nome](#nome)
     - [Resultado da pesquisa](#resultados-da-pesquisa)
-    - [Detalhes do filme](#detalhes-do-filme)
+    - [Detalhes do filme](#mag-detalhes-do-filme)
     - [Barra Lateral](#barra-lateral)
 - [Possivéis melhorias](#possíveis-melhorias)
-- [Autor](#autor)
-- [Licença](#licença)
+- [Autor](#-autor)
+- [Licença](#-licença)
 
 ---
 ## :hammer_and_wrench: Pré-requisitos
@@ -79,8 +79,6 @@ python -m pipx ensurepath
 pipx install poetry
 ```
 
-[:top: Indice](#indíce)
-
 ### Instalação do programa
 
 Após a instalação dos pré-requisitos, antes de rodar o projeto, terá que clonar o repositório do Github que se encontra ==[aqui](https://github.com/BrunoMGCardoso/Search_engine_imdb_movies)== e instalar o programa através do poetry.
@@ -98,6 +96,8 @@ poetry install
 ```
 
 Este comando irá instalar tudo o que é necessário para rodar o programa.
+
+[:top: Indice](#indíce)
 
 ---
 ## :arrow_forward: Execução
@@ -224,8 +224,8 @@ Algumas melhorias podem ser:
 Bruno Cardoso
 2026
 [:cat: Github](https://github.com/BrunoMGCardoso)
-[:e-mail: E-mail](bruno.cardoso.professional@gmail.com)
-[:briefcase: LinkedIn]()
+[:e-mail: E-mail](mailto:bruno.cardoso.professional@gmail.com)
+[:briefcase: LinkedIn](https://www.linkedin.com/in/brunomgcardoso/)
 
 [:top: índice](#indíce)
 
