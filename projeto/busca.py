@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 dframe = pd.read_csv(
-    'C:\\Users\\bruno\\Documents\\GitHub\\Search_engine_imdb_movies\\projeto\\base_dados\\filmes_imdb.csv'
+    'base_dados\\filmes_imdb.csv'
 )
 
 

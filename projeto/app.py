@@ -6,7 +6,7 @@ import busca
 # Base de dados que serve de referência para a pesquisa dos filmes.
 
 df_filmes = pd.read_csv(
-    'C:\\Users\\bruno\\Documents\\GitHub\\Search_engine_imdb_movies\\projeto\\base_dados\\filmes_imdb.csv'
+    'base_dados\\filmes_imdb.csv'
 )
 
 # --- Barra superior da página --- #
